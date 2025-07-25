@@ -18,7 +18,7 @@
 .nav-link  {
   display: flex;
   margin-right: 30px;
-  margin-top: 50px;
+  margin-top: 55px;
   gap: 3rem;
   font-size: 1.3rem;
   font-weight: 500;
@@ -28,7 +28,7 @@
 
   .nav-logo {
     margin-left: 135px;
-    margin-top: 30px;
+    margin-top: 50px;
   }
 .bold {
    font-weight: bold;
@@ -74,7 +74,7 @@
   .nav-link {
     flex-direction: row;
     gap: 0;
-    margin: 0;
+    margin-right: 20px;
     padding: 0;
     width: auto;
     align-items: center;
@@ -94,7 +94,7 @@
   }
   .banner-image {
     order: -1;
-    margin: 0 auto 20px auto;
+    margin-left: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
