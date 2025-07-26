@@ -187,3 +187,65 @@
     width: 100%;
   }
 }
+
+.image-section {
+  width: 540px;
+  height: 597px;
+ 
+}
+.Plants-lover-section {
+  margin-top: 300px;
+  margin-left: 135px;
+  display: flex;
+}
+.text1-section {
+  width: 540px;
+  height: 521px;
+ margin-left: 20px;
+}
+.Plants-tittle {
+  margin-left: 40px;
+}
+.Plants-list li {
+  width: 540px;
+  height: 108px;
+}
+.img2 {
+  width: 286px;
+  height: 286px;
+}
+@media screen and (max-width: 768px) {
+  .Plants-lover-section {
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 0;
+    align-items: flex-start;
+  }
+  .img2,
+  .image-section {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto 16px auto;
+  }
+  .image-section img,
+  .img2 img {
+    max-width: 90vw;
+    height: auto;
+    display: inline-block;
+  }
+  .text1-section {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    text-align: left;
+    padding: 0 1rem;
+  }
+  .Plants-tittle {
+    margin-left: 0;
+    text-align: left;
+  }
+  .Plants-list li {
+    width: 100%;
+    height: auto;
+  }
