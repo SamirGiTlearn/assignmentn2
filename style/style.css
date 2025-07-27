@@ -1,251 +1,359 @@
 
+/* Shared Style */
+@import "tailwindcss";
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .noto-serif-font {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
-  font-weight: <400>;
+  font-weight: 400;
   font-style: normal;
-   font-variation-settings:
-    "wdth" 100;
 }
 
-.nav-bar{
-  display: flex;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 90rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 9.375rem;
+  padding-right: 9.375rem;
+  padding-top: 1.875rem;
+}
+.description-color {
+  color: rgba(0, 0, 0, 0.5);
+}
+a:hover {
+  color: rgba(62, 121, 172, 0.738);
+}
+/* Navbar Section */
+.nav-container {
   justify-content: space-between;
   align-items: center;
-  width: 71.25rem;
+  align-content: center;
+  margin-bottom: 7.15625rem;
 }
-
-.nav-link  {
-  display: flex;
-  margin-right: 30px;
-  margin-top: 55px;
+.navbar-list {
   gap: 3rem;
-  font-size: 1.3rem;
-  font-weight: 500;
-  color: black;
-  list-style: none;
+}
+.nav-color {
+  color: rgb(137, 135, 161);
+}
+.navbar-list-item-1 a:hover {
+  color: rgba(78, 72, 72, 0.726);
 }
 
-  .nav-logo {
-    margin-left: 135px;
-    margin-top: 50px;
-  }
-.bold {
-   font-weight: bold;
-   font-size: 1.3rem;
-   color :black
-}
-.no-underline{
-  text-decoration: none;
-}
+/* Navbar Section End  */
 
-.banner {
-  display: flex;
-  width: 71.25rem;
-  height: 41.3125rem;
-  margin-top: 100px;
-  margin-left: 135px;
+/* Banner-Section */
+.Banner-Section {
+  margin-bottom: 7.5rem;
 }
-.banner-content {
-  margin-top: 120px;
-  
+.banner-title span,
+.plant-title span {
+  color: rgb(233, 90, 8);
 }
-.banner-image {
-  margin-right: 135px;
+.banner-description {
+  max-width: 35.625rem;
+  width: 100%;
 }
-.t-color {
-  color : #E95A08;  
-}
+/* Banner-Section End */
 
-/* mobile responsive */
-
-@media screen and (max-width: 768px) {
-  .nav-bar {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0 1rem;
-  }
-  .nav-logo {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-  .nav-link {
-    flex-direction: row;
-    gap: 0;
-    margin-right: 20px;
-    padding: 0;
-    width: auto;
-    align-items: center;
-  }
-  .nav-link li {
-    display: none;
-  }
-  .nav-link li:last-child {
-    display: block; 
-  }
-  .banner {
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    align-items: flex-start;
-  }
-  .banner-image {
-    order: -1;
-  
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .banner-image img {
-    width: 80vw;
-    max-width: 350px;
-    height: auto;
-  }
-  .banner-content {
-    margin-top: 0;
-    text-align: left;
-    width: 100%;
-    padding: 0 1rem;
-  }
-}
-
-/* mobile responsive */
-
-
-/*product section  */
-
-.product-section {
-  margin-bottom: 1%;
-}
-
-.product-head{
-  text-align: center;
-}
-.product-container {
+/* Our Plants Section */
+.plant-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  width: 71.25rem;
-  height: 41.3125rem;
-  margin-top: 100px;
-  margin-left: 135px;
+  gap: 30px 20px;
+  margin-bottom: 13.195rem;
 }
-.product-card {
-  width: 270px;
-  height: 484.95px;
+.plant-card img {
+  object-fit: contain;
+  margin-bottom: 1.875rem;
 }
-.product-card img {
-  width: 270px;
-  height: 322px;
-}
-
-.product-card h3 {
-  width: 132px;
-  height: 16px;
+.plant-title,
+.plant-description {
   text-align: center;
-  margin: 0 auto;
-  display: block;
+}
+.plant-title {
+  margin-bottom: 1rem;
+}
+.plant-description {
+  max-width: 55.5rem;
+  width: 100%;
+  margin-bottom: 3.0625rem;
+}
+.plant-card-title {
+  margin-bottom: 1.25rem;
+}
+.plant-usd {
+  margin-bottom: 1.875rem;
+}
+.add-to-cart {
+  padding: 1.625rem 3.125rem;
+  color: white;
+  background-color: rgb(233, 90, 8);
+  max-width: 16.875rem;
+  width: 100%;
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -ms-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+.add-to-cart:hover {
+  background-color: rgba(233, 90, 8, 0.753);
 }
 
-.product-card p {
+/*  Our Plants Section End  */
+
+/* Plants Lover Section */
+
+.plant-lover-list {
+  padding-left: 2.5rem;
+  color: rgba(0, 0, 0, 0.5);
+  /* padding-right: 40px; */
+}
+.plant-lover-list li,
+.plant-lover-title {
+  margin-bottom: 1.25rem;
+}
+.image-animate {
+  transform-origin: center center;
+  -webkit-animation: img-rotate 20s linear infinite;
+  animation: img-rotate 20s linear infinite;
+}
+
+@keyframes img-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* Plants Lover Section End */
+
+/* Latest Deals Section */
+.Latest-Deal-Section {
+  margin-bottom: 10rem;
   text-align: center;
-  margin: 5px 0;/
-  margin-top: 16px;
- 
 }
-.add-to-cart-btn {
-      background-color: #f68b1e;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      margin-top: 10px;
-      cursor: pointer;
-      border-radius: 5px;
-      width: 270px;
-      height: 50px;
-    }
-
-
-
-
-@media screen and (max-width: 768px) {
-  .product-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
-    gap: 1rem;
-    width: 100%;
-    margin-left: 0;
-    margin-top: 20px;
-  }
-  .product-card {
-    width: 100%;
-    height: auto;
-  }
-  .add-to-cart-btn {
-    width: 100%;
-  }
+.lates-deals-title {
+  margin-bottom: 1rem;
+}
+.latest-deals-img-container {
+  grid-template-columns: 0.35fr 0.65fr;
+  margin-top: 121px;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  place-items: center;
 }
 
-.image-section {
-  width: 540px;
-  height: 597px;
- 
+.latest-deal-img-left-1,
+.latest-deal-img-left-2 {
+  position: relative;
+  min-width: 22.9375rem;
+  min-height: 12.5625rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  place-items: center;
+  border: none;
+
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  border-radius: 14px;
 }
-.Plants-lover-section {
-  margin-top: 300px;
-  margin-left: 135px;
-  display: flex;
+.latest-deal-img-right-1 {
+  position: relative;
+  min-width: 47.0625rem;
+  min-height: 26.445625rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  place-items: center;
+  border: none;
+
+  -webkit-border-radius: 22px;
+  -moz-border-radius: 22px;
+  -ms-border-radius: 22px;
+  -o-border-radius: 22px;
+  border-radius: 22px;
 }
-.text1-section {
-  width: 540px;
-  height: 521px;
- margin-left: 20px;
+/* Latest Deals Section End */
+
+/* Join Section */
+.join {
+  background-image: url("../assets/news-letter-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 33.3125rem;
+  width: 100%;
+  height: 100%;
 }
-.Plants-tittle {
-  margin-left: 40px;
+.join h4 {
+  margin-bottom: 1.625rem;
 }
-.Plants-list li {
-  width: 540px;
-  height: 108px;
+input[type="email"] {
+  min-width: 40.25rem;
+  padding: 0.5rem 1.25rem;
 }
-.img2 {
-  width: 286px;
-  height: 286px;
+input[type="button"] {
+  min-width: 11.625rem;
+  width: 100%;
+  padding: 1.625rem 3.125rem;
+  background-color: rgb(233, 90, 8);
+  color: white;
+  -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -ms-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
 }
-@media screen and (max-width: 768px) {
-  .Plants-lover-section {
-    flex-direction: column;
-    margin-top: 40px;
-    margin-left: 0;
-    align-items: flex-start;
+.email-button:hover {
+  background-color: rgba(157, 62, 7, 0.844);
+}
+/* Join Section End */
+/* footer section */
+.footer-logo {
+  margin-bottom: 16px;
+  object-fit: contain;
+  align-self: self-start;
+}
+.footer-links ul li {
+  color: rgb(107, 114, 128);
+}
+.footer-links ul li:hover {
+  color: rgb(104, 134, 197);
+  text-decoration: underline;
+}
+.logo,
+.footer-logo-img,
+.footer-img-link1,
+.footer-img-link2,
+.footer-img-link3,
+.footer-img-link4 {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+.logo:hover,
+.footer-img-link1:hover,
+.footer-img-link2:hover,
+.footer-img-link3:hover,
+.footer-img-link4:hover,
+.footer-logo-img :hover {
+  opacity: 0.5;
+}
+/* Responsive Section */
+@media screen and (max-width: 40rem) {
+  .container {
+    max-width: 40rem;
+    padding: 0.8125rem 1rem;
   }
-  .img2,
-  .image-section {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    margin: 0 auto 16px auto;
+
+  /* Responsive Navbar Section */
+  .image-container img {
+    width: 50%;
   }
-  .image-section img,
-  .img2 img {
-    max-width: 90vw;
-    height: auto;
-    display: inline-block;
+  /*  Responsive Navbar Section End  */
+  /* Responsive Banner */
+  .banner-img {
+    margin-bottom: 1.75rem;
   }
-  .text1-section {
-    width: 100%;
-    height: auto;
-    margin-left: 0;
-    text-align: left;
-    padding: 0 1rem;
+  /* Responsive our plant */
+  .plant-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90vw;
+    place-items: center;
   }
-  .Plants-tittle {
-    margin-left: 0;
-    text-align: left;
+  .plant-card {
+    width: 42.5vw;
   }
-  .Plants-list li {
-    width: 100%;
-    height: auto;
+  .plant-card p {
+    font-size: 1rem;
   }
+  .add-to-cart {
+    font-size: 1rem;
+
+    /* max-width: 10.6875rem; */
+    max-width: inherit;
+  }
+  /* Responsive our plant End */
+
+  /* Responsive Plants Lover Section */
+  .plant-lover-list {
+    padding-left: 1.25rem;
+    /* padding-right: 40px; */
+  }
+  /* Responsive Plants Lover Section End */
+  /* Latest deals */
+
+  .latest-deals-img-container {
+    grid-template-columns: 1fr;
+  }
+  .latest-deal-img-left-1,
+  .latest-deal-img-left-2,
+  .latest-deal-img-right-1 {
+    min-width: 22.5625rem;
+    min-height: 11.53125rem;
+  }
+
+  /* Responsive Join */
+  .join-container {
+    min-width: 20rem;
+    object-fit: contain;
+  }
+  .join {
+    min-width: 24.5625rem;
+    min-height: 275px;
+    background-size: cover;
+    object-fit: contain;
+  }
+  input[type="email"] {
+    min-width: 218px;
+  }
+  input[type="button"] {
+    min-width: 103px;
+    padding: 19px 12px;
+  }
+  /* Responsive Join End */
+}
+/*  */
